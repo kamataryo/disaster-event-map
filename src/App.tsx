@@ -3,8 +3,6 @@ import { StaticMap } from "react-map-gl";
 // @ts-ignore
 import DeckGL from "@deck.gl/react";
 // @ts-ignore
-import { PolygonLayer } from "deck.gl";
-// @ts-ignore
 import { HeatmapLayer } from "@deck.gl/aggregation-layers";
 
 // Viewport settings
@@ -33,19 +31,14 @@ const App: React.FC = () => {
   React.useEffect(() => {
     const layer = new HeatmapLayer({
       id: "heatmapLayer",
-      data: []
+      data: [
+        { COORDINATES: [-122.42177834, 37.78346622], WEIGHT: 10 },
+        { COORDINATES: [-123.42177834, 37.78346622], WEIGHT: 10 }
+      ]
     });
 
     setLayer(layer);
   }, []);
-
-  // updateLayer on fetch
-  React.useEffect(() => {
-    console.log(event);
-    layer.updateState({
-      data: [{ COORDINATES: [-122.42177834, 37.78346622], WEIGHT: 10 }]
-    });
-  }, [event]);
 
   console.log(layer, style);
   return (
