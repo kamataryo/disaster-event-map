@@ -821,6 +821,13 @@
   dependencies:
     d3-hexbin "^0.2.1"
 
+"@deck.gl/aggregation-layers@^7.3.3":
+  version "7.3.3"
+  resolved "https://registry.yarnpkg.com/@deck.gl/aggregation-layers/-/aggregation-layers-7.3.3.tgz#4daafc7b0386dbb8d55c26d218bf96dcaeb28f1f"
+  integrity sha512-MHr8PoJF20Cqf9oQLFhB0zdQJlHhVFuzJFmPBMdlgSMsXx7+1qdE0GIISgRdMPXrVGjiywGAMDop+5zBTfTejg==
+  dependencies:
+    d3-hexbin "^0.2.1"
+
 "@deck.gl/core@7.2.3", "@deck.gl/core@^7.2.3":
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/@deck.gl/core/-/core-7.2.3.tgz#ebbe28334d676370e180a291e62fa12042c30966"

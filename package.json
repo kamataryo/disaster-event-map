@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@deck.gl/aggregation-layers": "^7.3.3",
     "@deck.gl/core": "^7.2.3",
     "@deck.gl/layers": "^7.2.3",
     "@deck.gl/react": "^7.2.3",
