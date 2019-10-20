@@ -31,10 +31,8 @@ const App: React.FC = () => {
   React.useEffect(() => {
     const layer = new HeatmapLayer({
       id: "heatmapLayer",
-      data: [
-        { COORDINATES: [-122.42177834, 37.78346622], WEIGHT: 10 },
-        { COORDINATES: [-123.42177834, 37.78346622], WEIGHT: 10 }
-      ]
+      radiusPixels: 500
+      // data: [{ COORDINATES: [0.78346622, 135.42177834], WEIGHT: 10 }]
     });
 
     setLayer(layer);
